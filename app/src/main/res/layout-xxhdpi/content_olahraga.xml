@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="65dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp">
+            <ImageView
+                    android:id="@+id/olahragaBackButton"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentLeft="true"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:src="@drawable/ic_arrow_back" />
+
+            <ImageView
+                    android:id="@+id/warningButton"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentRight="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:src="@drawable/ic_warning"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp">
+            <TextView
+                    android:id="@+id/txtdasbord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Online Television"
+                    android:fontFamily="@font/cabinsketchbold"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/white"/>
+            <TextView
+                    android:layout_below="@+id/txtdasbord"
+                    android:id="@+id/txtcenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:paddingBottom="20dp"
+                    android:fontFamily="@font/cabinsketchregular"
+                    android:text="saluran global olahraga"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"/>
+        </RelativeLayout>
+
+        <GridLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alignmentMode="alignBounds"
+                android:columnOrderPreserved="false"
+                android:columnCount="1"
+                android:rowCount="9">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                <RelativeLayout
+                        android:id="@+id/ol1"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/rounded_background">
+                    <TextView
+                            android:layout_marginTop="6dp"
+                            android:gravity="center"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:fontFamily="@font/cabinsketchbold"
+                            android:text="Tvri Sport HD"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/ol2"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/rounded_background">
+                    <TextView
+                            android:layout_marginTop="6dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:gravity="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:fontFamily="@font/cabinsketchbold"
+                            android:text="Super Soccer"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/ol3"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/rounded_background">
+                    <TextView
+                            android:layout_marginTop="6dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:gravity="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:fontFamily="@font/cabinsketchbold"
+                            android:text="Sport Max"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                <RelativeLayout
+                        android:id="@+id/ol4"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_background"
+                        android:layout_margin="6dp">
+                    <TextView
+                            android:layout_marginTop="6dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:gravity="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:fontFamily="@font/cabinsketchbold"
+                            android:text="Fight Sport"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/ol5"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_background"
+                        android:layout_margin="6dp">
+                    <TextView
+                            android:layout_marginTop="6dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:gravity="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:fontFamily="@font/cabinsketchbold"
+                            android:text="Chealsea Tv"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/ol6"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_background"
+                        android:layout_margin="6dp">
+                    <TextView
+                            android:layout_marginTop="6dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:gravity="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:fontFamily="@font/cabinsketchbold"
+                            android:text="Mu Tv"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                <RelativeLayout
+                        android:id="@+id/ol7"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/rounded_background">
+                    <TextView
+                            android:layout_marginTop="6dp"
+                            android:gravity="center"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:fontFamily="@font/cabinsketchbold"
+                            android:text="All Sport Brasil"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/ol8"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/rounded_background">
+                    <TextView
+                            android:layout_marginTop="6dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:gravity="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:fontFamily="@font/cabinsketchbold"
+                            android:text="ESPN"
+                            android:textSize="20sp"
+                            android:textStyle="bold"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/ol9"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/rounded_background">
+                    <TextView
+                            android:layout_marginTop="6dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:gravity="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:fontFamily="@font/cabinsketchbold"
+                            android:text="Abu Dhabi Sport"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                <RelativeLayout
+                        android:id="@+id/olahraga1"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/rounded_background">
+                    <TextView
+                            android:layout_marginTop="6dp"
+                            android:gravity="center"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:fontFamily="@font/cabinsketchbold"
+                            android:text="Bein Sport 1 HD"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/olahraga2"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/rounded_background">
+                    <TextView
+                            android:layout_marginTop="6dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:gravity="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:fontFamily="@font/cabinsketchbold"
+                            android:text="Bein Sport 2 HD"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/olahraga3"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/rounded_background">
+                    <TextView
+                            android:layout_marginTop="6dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:gravity="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:fontFamily="@font/cabinsketchbold"
+                            android:text="Bein Sport 3 HD"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                <RelativeLayout
+                        android:id="@+id/olahraga4"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_background"
+                        android:layout_margin="6dp">
+                    <TextView
+                            android:layout_marginTop="6dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:gravity="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:fontFamily="@font/cabinsketchbold"
+                            android:text="Bein Sport 4 HD"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/olahraga5"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_background"
+                        android:layout_margin="6dp">
+                    <TextView
+                            android:layout_marginTop="6dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:gravity="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:fontFamily="@font/cabinsketchbold"
+                            android:text="Bein Sport 5 HD"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/olahraga6"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_background"
+                        android:layout_margin="6dp">
+                    <TextView
+                            android:layout_marginTop="6dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:gravity="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:fontFamily="@font/cabinsketchbold"
+                            android:text="Bein Sport 6 HD"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                <RelativeLayout
+                        android:id="@+id/olahraga7"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_background"
+                        android:layout_margin="6dp">
+                    <TextView
+                            android:layout_marginTop="6dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:gravity="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:fontFamily="@font/cabinsketchbold"
+                            android:text="Bein Sport 7 HD"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/olahraga8"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_background"
+                        android:layout_margin="6dp">
+                    <TextView
+                            android:layout_marginTop="6dp"
+                            android:gravity="center"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:fontFamily="@font/cabinsketchbold"
+                            android:text="Bein Sport 8 HD"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/olahraga9"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_background"
+                        android:layout_margin="6dp">
+                    <TextView
+                            android:layout_marginTop="6dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:gravity="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:fontFamily="@font/cabinsketchbold"
+                            android:text="Bein Sport 9 HD"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                <RelativeLayout
+                        android:id="@+id/olahraga10"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_background"
+                        android:layout_margin="6dp">
+                    <TextView
+                            android:layout_marginTop="6dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:gravity="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:fontFamily="@font/cabinsketchbold"
+                            android:text="Bein Sport 10 HD"
+                            android:textSize="19sp"
+                            android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/olahraga11"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_background"
+                        android:layout_margin="6dp">
+                    <TextView
+                            android:layout_marginTop="6dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:gravity="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:fontFamily="@font/cabinsketchbold"
+                            android:text="Bein Sport 11 HD"
+                            android:textSize="19sp"
+                            android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/olahraga12"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_background"
+                        android:layout_margin="6dp">
+                    <TextView
+                            android:layout_marginTop="6dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:gravity="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:fontFamily="@font/cabinsketchbold"
+                            android:text="Bein Sport 12 HD"
+                            android:textSize="19sp"
+                            android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                <RelativeLayout
+                        android:id="@+id/olahraga13"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_background"
+                        android:layout_margin="6dp">
+                    <TextView
+                            android:layout_marginTop="6dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:gravity="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:fontFamily="@font/cabinsketchbold"
+                            android:text="Bein Sport EPL 1 "
+                            android:textSize="19sp"
+                            android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/olahraga14"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_background"
+                        android:layout_margin="6dp">
+                    <TextView
+                            android:layout_marginTop="6dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:gravity="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:fontFamily="@font/cabinsketchbold"
+                            android:text="Bein Sport EPL 2"
+                            android:textSize="19sp"
+                            android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/olahraga15"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_background"
+                        android:layout_margin="6dp">
+                    <TextView
+                            android:layout_marginTop="6dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:gravity="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:fontFamily="@font/cabinsketchbold"
+                            android:text="Bein Sport EPL 3"
+                            android:textSize="19sp"
+                            android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                <RelativeLayout
+                        android:id="@+id/olahraga16"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_background"
+                        android:layout_margin="6dp">
+                    <TextView
+                            android:layout_marginTop="6dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:gravity="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:fontFamily="@font/cabinsketchbold"
+                            android:text="Bein Football 1"
+                            android:textSize="19sp"
+                            android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/olahraga17"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_background"
+                        android:layout_margin="6dp">
+                    <TextView
+                            android:layout_marginTop="6dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:gravity="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:fontFamily="@font/cabinsketchbold"
+                            android:text="Bein Football 2"
+                            android:textSize="19sp"
+                            android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/olahraga18"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_background"
+                        android:layout_margin="6dp">
+                    <TextView
+                            android:layout_marginTop="6dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:gravity="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:fontFamily="@font/cabinsketchbold"
+                            android:text="Bein Football 3"
+                            android:textSize="19sp"
+                            android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+        </GridLayout>
+    </LinearLayout>
+
+</ScrollView>

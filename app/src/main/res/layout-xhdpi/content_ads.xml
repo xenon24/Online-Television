@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp">
+            <ImageView
+                android:id="@+id/adsBackButton"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentLeft="true"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:src="@drawable/ic_arrow_back" />
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:onClick="share"
+                android:layout_marginRight="80dp"
+                android:layout_alignParentRight="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:src="@drawable/ic_share"/>
+
+            <ImageView
+                android:id="@+id/helpButton"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginRight="40dp"
+                android:layout_alignParentRight="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:src="@drawable/ic_help"/>
+
+            <ImageView
+                android:id="@+id/infoButton"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:src="@drawable/ic_info"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:id="@+id/txtdasbord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cabinsketchbold"
+                android:text="Tinjau Penempatan Iklan"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:layout_below="@+id/txtdasbord"
+                android:id="@+id/txtcenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:paddingBottom="20dp"
+                android:fontFamily="@font/cabinsketchregular"
+                android:text="google"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="6dp">
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adsBannerAds"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="LARGE_BANNER"
+                ads:adUnitId="@string/banner">
+            </com.google.android.gms.ads.AdView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/txtcenter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_background"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:fontFamily="@font/cabinsketchregular"
+                android:text="Kami selalu berusaha meletakkan iklan penawaran google dengan tepat agar pengguna tidak merasa terganggu pada saat melihat tayangan televisi secara online, kami menerima saran dari pengguna untuk penempatan iklan yang sesuai, agar pengguna senantiasa merasakan hal yang lebih baik dalam penggunaan aplikasi kami."
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/txtcenter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_background"
+            android:layout_marginBottom="12dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:fontFamily="@font/cabinsketchregular"
+                    android:text="Kami juga menyediakan pusat bantuan dan info aplikasi pada halaman ini, untuk menjaga kepuasan dan kenyamanan pengguna kami mohon sekiranya berikan kami penilaian, dan jika anda puas dengan aplikasi kami anda dapat membagikan aplikasi kami dengan menekan tombol share, terimakasih. "
+                    android:textSize="14sp"
+                    android:textColor="@android:color/darker_gray"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:onClick="rate"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/cabinsketchregular"
+            android:text="Berikan Penilaian"
+            android:textSize="12dp"
+            android:background="@drawable/rounded_button"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
